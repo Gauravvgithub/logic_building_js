@@ -12,7 +12,7 @@
 
 // let brr = [...arr] // O(n)
 
-// silent listen
+// // silent listen
 // function isAnagramOrNot(s,t){ // [1,2,3,4,5]
 //     if(s.length!==t.length) return false
 //     let flag = false;
@@ -43,7 +43,8 @@
 //     return [false,occurences]
 // }
 
-console.log(isAnagramOrNot("listen","earth8")) // O(n^2)
+// console.log(isAnagramOrNot("listen","silent")) // O(n^2)
+
 
 function isAnagramOrNot(s,t){ // O(n) + O(n) = O(n) + O(n)
     if(s.length!==t.length) return false;
@@ -68,3 +69,4 @@ function isAnagramOrNot(s,t){ // O(n) + O(n) = O(n) + O(n)
     if(hashMap1Keys.length !== hashMap2Keys.length) return false
     return true;
 }
+console.log(isAnagramOrNot("listen","earth8")) // O(n^2)
